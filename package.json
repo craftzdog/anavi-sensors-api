@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon server/index.js --exec \"npm start\"",
     "build": "npx babel src --out-dir server",
-    "start": "DEBUG=app,koa-router node index.js",
+    "start": "DEBUG=app,koa-router node server/index.js",
     "lint": "eslint server"
   },
   "repository": {

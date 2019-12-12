@@ -24,7 +24,7 @@ export default function routes(server) {
       const [, humidityStr] = line3.split(': ')
       ctx.body = {
         temperature: temperatureStr,
-        humidityStr: humidityStr
+        humidity: humidityStr
       }
     }
   })

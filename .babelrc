@@ -1,0 +1,14 @@
+{
+  "presets": [
+    ["@babel/preset-env", {
+      "modules": "commonjs",
+      "targets": { "node": "12.13.1" },
+      "useBuiltIns": "usage",
+      "debug": false,
+      "corejs": 3
+    }]
+  ],
+  "plugins": [
+    "@babel/plugin-proposal-class-properties"
+  ]
+}

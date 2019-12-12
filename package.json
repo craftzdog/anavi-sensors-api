@@ -1,0 +1,42 @@
+{
+  "name": "@craftzdog/anavi-sensors-api",
+  "version": "1.0.0",
+  "description": "API server for ANAVI sensors",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server/index.js --exec \"npm start\"",
+    "build": "npx babel src --out-dir server",
+    "start": "DEBUG=app,koa-router node index.js",
+    "lint": "eslint server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/craftzdog/anavi-sensors-api.git"
+  },
+  "keywords": [],
+  "author": "Takuya Matsuyama<hi@craftz.dog>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/craftzdog/raspcon/issues"
+  },
+  "homepage": "https://github.com/craftzdog/raspcon#readme",
+  "dependencies": {
+    "debug": "^4.1.1",
+    "koa": "^2.11.0",
+    "koa-logger": "^3.2.1",
+    "koa-router": "^7.4.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.7.5",
+    "@babel/core": "^7.7.5",
+    "@babel/plugin-proposal-class-properties": "^7.7.4",
+    "@babel/preset-env": "^7.7.6",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.7.2",
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "nodemon": "^2.0.2",
+    "prettier": "^1.19.1"
+  }
+}

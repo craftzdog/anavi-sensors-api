@@ -9,7 +9,7 @@ export default function routes(server) {
     ctx.body = { ok: true }
   })
 
-  apiRouter.put('/sensor/htu21d', async ctx => {
+  apiRouter.get('/sensor/htu21d', async ctx => {
     const cmd = spawnSync('/home/pi/anavi-examples/sensors/HTU21D/c/HTU21D', [])
     if (cmd.error) {
       logger('could not get sensor data:', cmd.error)
